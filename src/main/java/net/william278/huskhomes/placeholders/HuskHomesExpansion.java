@@ -33,7 +33,7 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
     @NotNull
     @Override
     public String getVersion() {
-        return "1.0.4";
+        return "2.0";
     }
 
     @NotNull
