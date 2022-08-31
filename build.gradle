@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
-    compileOnly 'net.william278:HuskHomes2:fde3736eb3'
+    compileOnly 'net.william278:HuskHomes2:800bffbbf2'
     compileOnly 'me.clip:placeholderapi:2.11.2'
     compileOnly 'org.jetbrains:annotations:23.0.0'
 }

@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 /**
  * PlaceholderAPI expansion for HuskHomes v3.x
  */
+@SuppressWarnings("unused")
 public class HuskHomesExpansion extends PlaceholderExpansion {
 
     @NotNull
@@ -74,8 +75,16 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
         // Return the requested data
         return switch (params) {
             case "homes_count" -> String.valueOf(huskHomesAPI.getUserHomes(player).join().size());
-            //todo case "max_homes" -> String.valueOf(huskHomesAPI.getMaxSetHomes(player));
-            //todo case "homes_free" -> String.valueOf(huskHomesAPI.getFreeSetHomes(player));
+
+            case "max_homes" -> String.valueOf(huskHomesAPI.getMaxHomeSlots(player));
+
+            case "max_public_homes" -> String.valueOf(huskHomesAPI.getMaxPublicHomeSlots(player));
+
+            case "free_home_slots" -> String.valueOf(huskHomesAPI.getFreeHomeSlots(player));
+
+            case "home_slots" -> String.valueOf(huskHomesAPI.getUserData(player.uuid).join()
+                    .map(UserData::homeSlots)
+                    .orElse(0));
 
             case "homes_list" -> huskHomesAPI.getUserHomes(player).join()
                     .stream()
