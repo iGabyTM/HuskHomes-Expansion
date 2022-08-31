@@ -91,12 +91,12 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
                     .map(home -> home.meta.name)
                     .collect(Collectors.joining(", "));
 
-            case "homes_set_public" -> String.valueOf(huskHomesAPI.getUserHomes(player).join()
+            case "public_homes_count" -> String.valueOf(huskHomesAPI.getUserHomes(player).join()
                     .stream()
                     .filter(home -> home.isPublic)
                     .count());
 
-            case "public_homes_count" -> huskHomesAPI.getUserHomes(player).join()
+            case "public_homes_list" -> huskHomesAPI.getUserHomes(player).join()
                     .stream()
                     .filter(home -> home.isPublic)
                     .map(home -> home.meta.name)
