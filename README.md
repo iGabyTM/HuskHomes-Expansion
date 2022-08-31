@@ -3,4 +3,6 @@
 
 **HuskHomes Placeholders** is the PlaceholderAPI expansion for HuskHomes v3.x+.
 
-You can download the expansion from the [PlaceholderAPI eCloud](https://api.extendedclip.com/expansions/huskhomes/) using the following command: `/papi ecloud download HuskHomes`
+You can download the expansion from the [PlaceholderAPI eCloud](https://api.extendedclip.com/expansions/huskhomes/) using the following command: `/papi ecloud download huskhomes`.
+
+You can view a list of available placeholders on the [HuskHomes docs](https://william278.net/docs/huskhomes/Placeholders).
