@@ -70,7 +70,7 @@ public class HuskHomesExpansion extends PlaceholderExpansion {
 
         // Adapt the player to an OnlineUser
         final HuskHomesAPI huskHomesAPI = HuskHomesAPI.getInstance();
-        final OnlineUser player = huskHomesAPI.adaptUser(Bukkit.getPlayer(offlinePlayer.getUniqueId()));
+        final OnlineUser player = huskHomesAPI.adaptUser(offlinePlayer.getPlayer());
 
         // Return the requested data
         return switch (params) {
